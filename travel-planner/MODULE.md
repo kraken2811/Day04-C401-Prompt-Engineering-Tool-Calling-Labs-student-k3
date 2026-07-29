@@ -36,3 +36,31 @@ Không phụ thuộc module nào để build. App.jsx nối vào Home (module 2)
 Thư mục này sắp xếp y hệt cấu trúc dự án chính. Khi merge, copy toàn bộ nội dung
 của nó vào thư mục gốc `travel-planner/`. Không file nào trùng với module khác
 nên hợp nhất 6 module sẽ ra đúng dự án hoàn chỉnh, không có conflict.
+
+
+# Module 5 — Nguyễn Thành Long
+
+| | |
+|---|---|
+| Họ và tên | Nguyễn Thành Long |
+| Mã học viên | 2A202601443 |
+| Vai trò | Dữ liệu POI thật & bản đồ |
+
+Lấy khách sạn/nhà hàng có thật từ OpenStreetMap qua Photon và Overpass, modal bản đồ Google Maps, hai thẻ hiển thị POI.
+
+## File phụ trách
+
+- `src/lib/osmApi.js`
+- `src/components/chatbot/MapModal.jsx`
+- `src/components/chatbot/PlacesCard.jsx`
+- `src/components/chatbot/HotelCard.jsx`
+
+## Phụ thuộc
+
+Dùng ui primitive của module 1.
+
+## Merge
+
+Thư mục này sắp xếp y hệt cấu trúc dự án chính. Khi merge, copy toàn bộ nội dung
+của nó vào thư mục gốc `travel-planner/`. Không file nào trùng với module khác
+nên hợp nhất 6 module sẽ ra đúng dự án hoàn chỉnh, không có conflict.
