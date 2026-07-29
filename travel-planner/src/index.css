@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Light theme. Chu dao: cam do + den. Nen phang, khong gradient. */
+  :root {
+    --background: 24 20% 98%;
+    --foreground: 20 14% 8%;
+    --card: 0 0% 100%;
+    --card-foreground: 20 14% 8%;
+    --primary: 14 90% 44%;
+    --primary-foreground: 0 0% 100%;
+    --muted: 24 14% 95%;
+    --muted-foreground: 20 8% 40%;
+    --accent: 20 14% 12%;
+    --accent-foreground: 0 0% 100%;
+    --border: 22 14% 88%;
+    --input: 22 14% 88%;
+    --ring: 14 90% 44%;
+    --radius: 1rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-feature-settings: 'ss01', 'cv01';
+  }
+}
+
+@layer components {
+  .surface {
+    @apply rounded-xl border border-border bg-card shadow-sm;
+  }
+
+  .stat-value {
+    @apply text-4xl font-semibold tracking-tight tabular-nums;
+  }
+
+  .section-title {
+    @apply text-3xl font-semibold tracking-tight;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-border;
+}
